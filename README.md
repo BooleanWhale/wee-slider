@@ -20,6 +20,7 @@ See the slider in action: <a href="https://codepen.io/ash_s_west/full/bGmOEyP" t
 - Show/hide navigation buttons on hover
 - Customizable CSS variables for easy style customization
 - Naming conventions ensure no conflicts with existing CSS
+- No redundancy, maximize performance by reducing iterations and DOM calls to a minimum.
 
 For information on additional features, refer to [Dev notes](#dev-notes).
 
