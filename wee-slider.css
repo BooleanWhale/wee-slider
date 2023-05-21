@@ -1,11 +1,12 @@
 wee-slider {
-  --wee-slide-align: start;
+  /* Edit these variables for easy customisability */
   --wee-visible-slides-mobile: 1.5;
   --wee-visible-slides-desktop: 3.5;
-  --wee-visible-slides: var(--wee-visible-slides-mobile);
   --wee-slide-gap: 10px;
   --wee-navdot-color: rgb(0,0,0);
-  --wee-transition: ease-in-out 200ms;
+  /* variables bellow this point should not be changed */
+  --wee-slide-align: center;
+  --wee-visible-slides: var(--wee-visible-slides-mobile);
   --wee-slide-width: calc(((100% - (var(--wee-slide-gap) * (var(--wee-visible-slides) - 1))) / var(--wee-visible-slides)));
 }
 
