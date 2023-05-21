@@ -2,7 +2,7 @@
 
 Wee Slider is a lightweight, performant class-based web component that allows you to create sliders with ease. It focuses on performance and small file sizes, with the minified JavaScript file (wee-slider.min.js) being less than 2kb in size.
 
-See the slider in action: [Wee Slider on CodePen](https://codepen.io/ash_s_west/pen/bGmOEyP)
+See the slider in action: [Wee Slider on CodePen](https://codepen.io/ash_s_west/full/bGmOEyP)
 
 ## Table of Contents
 
