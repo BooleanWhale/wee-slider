@@ -12,8 +12,6 @@ See the slider in action: [Wee Slider on CodePen](https://codepen.io/ash_s_west/
 - [Configuration](#configuration)
 - [Dev notes](#dev-notes)
 
-<hr>
-
 ## Features
 
 - Lightweight and performant
@@ -25,8 +23,6 @@ See the slider in action: [Wee Slider on CodePen](https://codepen.io/ash_s_west/
 
 For information on additional features, refer to [Dev notes](#dev-notes).
 
----
-
 ## Installation
 
 You can include the Wee Slider component in your project by downloading the minified JavaScript file ```wee-slider.min.js``` and CSS file ```wee-slider.css```, and linking to them in the ```<head>``` of your HTML.
@@ -36,7 +32,6 @@ You can include the Wee Slider component in your project by downloading the mini
 <script src="path/to/wee-slider.min.js"></script>
 ```
 
----
 ## Usage
 
 To use Wee Slider, you need to include the necessary HTML structure and attributes in your markup.
@@ -61,8 +56,6 @@ To use Wee Slider, you need to include the necessary HTML structure and attribut
 </wee-slider>
 ```
 
----
-
 ## Configuration
 
 #### Data attrubutes
@@ -73,8 +66,6 @@ Wee Slider provides configuration options through data-attributes on the <wee-sl
 - data-align: Sets the alignment of slides (start, center, or end) (default: center)
 - data-buttons-on-hover: Shows the navigation buttons on hover (true or false) (default: true)
     
-Example:
-
 ```
 <wee-slider 
   data-loop="true" 
@@ -99,8 +90,6 @@ wee-slider {
 }
 ```
 For multiple sliders with different appearances, add a class to specific `<wee-slider>` elemement and overwrite the above variable under that class.
-
----
 
 ## Dev Notes
 
