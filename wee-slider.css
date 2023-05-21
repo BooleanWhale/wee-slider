@@ -67,6 +67,16 @@ wee-slider .wee-slider__buttons button {
   translate: 0 -50%;
 }
 
+wee-slider[data-buttons-on-hover="true"] .wee-slider__buttons button {
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  wee-slider[data-buttons-on-hover="true"]:hover .wee-slider__buttons button {
+    pointer-events: all;
+  }
+}
+
 wee-slider .wee-slider__buttons button:not([disabled]) {
   cursor: pointer;
 }
