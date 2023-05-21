@@ -4,6 +4,7 @@ wee-slider {
   --wee-visible-slides-desktop: 3.5;
   --wee-visible-slides: var(--wee-visible-slides-mobile);
   --wee-slide-gap: 10px;
+  --wee-navdot-color: rgb(0,0,0);
   --wee-transition: ease-in-out 200ms;
   --wee-slide-width: calc(((100% - (var(--wee-slide-gap) * (var(--wee-visible-slides) - 1))) / var(--wee-visible-slides)));
 }
@@ -90,7 +91,29 @@ wee-slider .wee-slider__navdots {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+}
+
+wee-slider .wee-slider__navdot {
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+
+wee-slider .wee-slider__navdot:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 8px;
+  width: 8px;
+  background: var(--wee-navdot-color);
+  border-radius: 50%;
+}
+
+wee-slider .wee-slider__navdot:hover:after {
+  scale: 1.2;
 }
 
 wee-slider .wee-slider__navdot:not(.visible) {
