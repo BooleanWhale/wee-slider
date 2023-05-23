@@ -97,6 +97,8 @@ Wee Slider prioritizes lightweightness and performance to address the common iss
 
 The primary objectives of Wee Slider are to deliver a seamless and efficient slider experience while maintaining a minimal file size. By focusing on core functionalities and optimizing performance, Wee Slider aims to provide a reliable and efficient solution for creating sliders in web projects.
 
+Coming soon: Vertical slider functionality (see ```feature/vertical-slider``` branch)
+
 ## License
 
 Wee Slider is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.

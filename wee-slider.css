@@ -3,7 +3,7 @@ wee-slider {
   --wee-visible-slides-mobile: 1.5;
   --wee-visible-slides-desktop: 3.5;
   --wee-slide-gap: 10px;
-  --wee-navdot-color: rgb(0,0,0);
+  --wee-navdot-color: rgb(255,255,255);
   /* variables bellow this point should not be changed */
   --wee-slide-align: center;
   --wee-visible-slides: var(--wee-visible-slides-mobile);
@@ -44,6 +44,7 @@ wee-slider .wee-slider {
 }
 
 wee-slider .wee-slider__slides {
+  margin: 0;
   display: flex;
   gap: var(--wee-slide-gap);
   padding: 0;
@@ -132,6 +133,38 @@ wee-slider .wee-slider__navdot:not(.visible) {
   cursor: pointer;
 }
 
+/* Vertical slider CSS */
+wee-slider[data-vertical="true"] .wee-slider__slides {
+  max-height: 98vh;
+  flex-direction: column;
+}
+
+wee-slider[data-vertical="true"] .wee-slider__buttons button {
+  left: 50%;
+  translate: -50% 0;
+}
+
+wee-slider[data-vertical="true"] .wee-slider__button-prev {
+  top: 0;
+  rotate: 90deg;
+}
+
+wee-slider[data-vertical="true"] .wee-slider__button-next {
+  top: unset;
+  right: unset;
+  bottom: 0;
+  rotate: 90deg;
+}
+
+wee-slider[data-vertical="true"] .wee-slider__navdots {
+  position: absolute;
+  bottom: 50%;
+  right: 15px;
+  translate: 0 50%;
+  flex-direction: column;
+  width: 10px;
+}
+
 /* DEMO CSS */
 
 wee-slider .wee-slider__slide {
@@ -163,7 +196,7 @@ wee-slider.loaded .wee-slider__slide:not(.visible) img {
 }
 
 wee-slider .wee-slider__buttons button {
-  margin: 0 10px;
+  margin: 10px;
   border: none;
   font-size: 0;
   background: rgba(0, 0, 0, 0.4);
